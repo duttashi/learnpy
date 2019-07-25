@@ -23,18 +23,16 @@ See [contributing](https://github.com/duttashi/learnpy/blob/master/CONTRIBUTING.
 
 
 ## Beginner
-1. [Strings]()
-1. [Numbers]()
-1. [Conditionals]()
-1. [Lists]()
-1. [Dictionaries]()
-1. [For loops]()
-1. [Functions]()
-1. [File I\O]()
-1. [Classes]()
-1. [Exceptions]()
-1. [Modules and packages]()
-1. [Debugging]()
+1. Strings
+1. Numbers
+1. Conditionals
+1. [Lists](https://github.com/duttashi/learnpy/blob/master/notebooks/beginner/Lists.ipynb)
+1. [Dictionaries](https://github.com/duttashi/learnpy/blob/master/notebooks/beginner/Dictionary.ipynb)
+1. For loops
+1. Functions
+1. File I\O
+1. Classes
+1. Exceptions
 
 
 ## Intermediate
@@ -42,11 +40,11 @@ See [contributing](https://github.com/duttashi/learnpy/blob/master/CONTRIBUTING.
 #### Idiomatic Python
 Python is a powerful language which contains many features not presented in most other programming languages. Idiomatic section will cover some of these Pythonic features in detail. These materials are especially useful for people with background in other programming languages.
 
-1. [Idiomatic loops]()
-1. [Idiomatic dictionaries]()
-1. [Idiomatic Python - miscellaneous part 1]()
-1. [Idiomatic Python - miscellaneous part 2]()
-1. [Idiomatic Python exercise]() 
+1. [Idiomatic loops]
+1. [Idiomatic dictionaries]
+1. [Idiomatic Python - miscellaneous part 1]
+1. [Idiomatic Python - miscellaneous part 2]
+1. [Idiomatic Python exercise]
 
 #### Best practices
 A list of best development practices for Python projects. Most of the practices listed here are also applicable for other languages, however the presented tooling focuses mainly on Python.
