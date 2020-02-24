@@ -31,9 +31,9 @@ var = 'caesarian'
 sns.countplot(data = df_train, x = var, hue = 'caesarian', palette = ('r', 'b'))
 #plt.show()
 #scatterplot
-sns.set()
-cols = ['age', 'delivery_number', 'delivery_time', 'blood_pressure', 'heart_problem', 'caesarian']
-sns.pairplot(df_train[cols], height = 2.5)
+# sns.set()
+# cols = ['age', 'delivery_number', 'delivery_time', 'blood_pressure', 'heart_problem', 'caesarian']
+#sns.pairplot(df_train[cols], height = 2.5)
 #plt.show();
 
 # 3. Correlation detection
@@ -41,13 +41,15 @@ corrmat = df_train.corr()
 f, ax = plt.subplots(figsize=(12, 9))
 sns.heatmap(corrmat, vmax=.8, square=True);
 #plt.show() # delivery_number and age are correlated
+
 # 3. Correlation detection amongst numerical variables. Zoomed heatmap
 k = 3 #number of variables for heatmap
 cols = corrmat.nlargest(k, 'delivery_number')['delivery_number'].index
 cm = np.corrcoef(df_train[cols].values.T)
 sns.set(font_scale=1.25)
 hm = sns.heatmap(cm, cbar=True, annot=True, square=True, fmt='.2f', annot_kws={'size': 10}, yticklabels=cols.values, xticklabels=cols.values)
-plt.show() # delivery number and age have a low positive correlation. delivery number, delivery time and age have low negative correlation
+plt.show() # delivery number and age have a low positive correlation.
+
 
 
 
