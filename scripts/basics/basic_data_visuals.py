@@ -1,4 +1,4 @@
-# objective: Exploratory Data Analysis with Pandas
+# objective: Data visualization
 # script create date: 24/Feb/2020
 
 # reference: https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python
@@ -15,9 +15,8 @@ print(df_train.info())
 # describe the response variable
 x = df_train['SalePrice'].describe()
 #print(x)
-# show the plot
-# Histogram
-sns.distplot(df_train['SalePrice'])
+# Notes: plt.show() when used only once in the whole script will show all plots at once. But if it's invoked after every plot creation, then it will show the plots one by one.
+
 # Plot formatting
 #plt.legend(prop=12)
 # plt.title('House Sale Price')
