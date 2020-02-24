@@ -1,4 +1,4 @@
-# objective: create a basic classifier
+# objective: create a basic knn classifier
 # script create date: 24/2/2020
 # script last modified date:
 
@@ -44,23 +44,6 @@ X_train_new = [[3, 5, 4, 2], [5, 4, 3, 2]]
 test_model = knn.predict(X_train_new)
 print(test_model)
 
-# Use a logistic regression model
-from sklearn.linear_model import LogisticRegression
-# instantiate the model
-logreg = LogisticRegression(solver="liblinear")
-# fit the model with data
-#logreg.fit(X_train,y_test)
-# predict the response for new observation
-#logreg.predict(X_train_new) # warning is generated because of non-scaled data
 
-# scale the data
-from sklearn import preprocessing
-X_train_scaled = preprocessing.scale(X_train)
-y_test_scaled = preprocessing.scale(y_test)
-# Now train the algorithm on scaled data
-# logreg.fit(X_train_scaled, y_test_scaled) # will give error as response variable is of integer type
-# Coerce the response variable to be categorical
-label_enc = preprocessing.LabelEncoder()
-#X_train_scaled_encoded = label_enc.fit_transform(X_train_scaled)
 
 
