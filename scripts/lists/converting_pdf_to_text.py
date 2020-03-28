@@ -1,5 +1,6 @@
-# Motivation: To understand lista and its operations.
-# Objective: Read a pdf file containing text into a list. Clean the list data by removing stop words, punctuation etc
+# Motivation: To understand list and its operations.
+# Objective: Read a pdf file and convert it to text format. Then write this file to disc
+# Reference: The solution to use tika package was found in this SO post https://stackoverflow.com/questions/34837707/how-to-extract-text-from-a-pdf-file
 # To convert pdf to text format, you will need the `tika` library. Install it as, `pip install tika`
 
 from tika import parser
