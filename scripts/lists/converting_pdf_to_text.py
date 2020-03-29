@@ -6,12 +6,14 @@
 from tika import parser
 
 # Parse data to file
-file_data = parser.from_file('../../data/alice.pdf')
+file_data = parser.from_file('../../data/imbalanced.pdf')
 # Get file text content
 text_data = file_data['content']
 print("Pdf converted to text format")
 # Open new data file
-f = open("../../data/alice.txt", "w")
+# if there is an error like, "UnicodeEncodeError: 'charmap' codec can't encode character '\ufffd' in position 6029: character maps to <undefined>"
+# then add, `encoding="utf-8"` to the open() as shown below
+f = open("../../data/imbalanced.txt", "w",encoding="utf-8")
 f.write(str(text_data))      # str() converts to string
 print(" Text file now written to disc")
 f.close()
