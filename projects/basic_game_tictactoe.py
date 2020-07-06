@@ -19,31 +19,30 @@ def user_choice():
     # Will check if the user input is within a range and is a number
     
     # VARIABLES
-    acceptable_range = list(range(10))
+    #acceptable_range = list(range(10))
+    acceptable_range = range(0,10)
     within_range = False
     choice = "WRONG"
     
     # TWO CONFDITIONS TP CHECK
     # DIGIT OR WITHI RANGE== False
     
-    while choice.isdigit()== False:
+    while choice.isdigit()== False or within_range == False :
         
         choice = input("Please enter a number between 0-10: ")
         
+        # DIGIT CHECK
         if choice.isdigit()==False:
             print("Sorry, that is not a digit!")
-    
-    choice = int(choice)
-    if choice in acceptable_range:
-        print(choice, " is within range")
-        within_range = True
-    else:
-        print("Value out of range")
             
-        # check if choice within acceptable range
+        # RANGE CHECK
+        if choice.isdigit()== True:
+            if int(choice) in acceptable_range:
+                within_range = True
+            else:
+                print("Sorry! You are out of acceptable range")
+                within_range = False
     
-    
-            
     return int(choice)
     
         
