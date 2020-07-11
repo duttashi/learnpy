@@ -1,2 +1,5 @@
 *.ini
 .spyproject
+*.txt
+*.db
+*.cpython-37.pyc
