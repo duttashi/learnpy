@@ -17,27 +17,30 @@ menu = """ Please select one of the following options:
 
 welcome = "Welcome to the programming diary!"
 
-print(welcome)
-# Looping while asking user for input
-user_input = int(input(menu))
-
 def prompt_user_input():
     entry_content = input("What have you learned today? ")
     entry_date = input("Enter the date: ")
     create_table()
     add_entry(entry_content, entry_date)
+
+print(welcome)
+# Looping while asking user for input
+
+while(user_input := input(menu)) != "3":
     
-while(user_input!=3):
-    # We'll deal with user input here
-    if user_input == 1:
-        #print("Adding...")
-        prompt_user_input()
-    elif user_input == 2:
-        #print("Viewing...")
-        #view_entries(entries)
-        get_entries()
-    else:
-        print("Invalid option! please try again")
-        close_connection()
+    if user_input=="1":
+        entry_content = input("What have you learned today? ")
+        entry_date = input("Enter the date: ")
         
-    user_input = int(input(menu))
+        add_entry(entry_content, entry_date)
+    elif user_input == "2":
+        for entry in get_entries():
+            print(f"{entry['date']}\n{entry['content']}\n\n")
+    else:
+        print("Invalid option, please try again!")
+        
+            
+        
+
+
+    
