@@ -20,6 +20,7 @@ def get_entries():
 import sqlite3
 connection = sqlite3.connect("tempdata.db")
 cursor = connection.cursor()
+cursor.execute("select * from entries;")
 
 # create table in sqlite database
 def create_table():
@@ -32,9 +33,13 @@ def create_table():
         connection.commit()
         
     #connection.commit()
+def get_table_data():
+    for row in cursor:
+        print(row)
+        
     
 def close_connection():
     connection.close()
     
-
+get_table_data()
 
