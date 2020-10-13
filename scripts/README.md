@@ -16,19 +16,22 @@ This project uses the following IDE and python distribution:
 The following are the various types of python topics that I'll be writing about.
 
 - machine learning abbreviated as `ml_`
-- pandas abbreviated as `mlpd_`
-- numpy abbreviated as `mlnp_`
-- scipy abbreviated as `mlsp_`
+	- pandas abbreviated as `mlpd_`
+	- numpy abbreviated as `mlnp_`
+	- scipy abbreviated as `mlsp_`
 - class abbreviated as `cls_`
 - dictionary abbreviated as `dict_`
 - list abbreviated as `list_`
 - series abbreviated as `ser_`
 - method abbreviated as `func_`
-- web data scrapping abbreviated as `scrp_`
+- web data scrapping abbreviated as `webscrp_`
 - data extraction from offline content like pdf file or excel file etc will be abbreviated as `extr_`
 - I/O (input/output) related topics abbreviated as `io_`
 - Boto3 in AWS abbreviated as `aws_`
-- loops like `for, while` abbreviated as `loop_`  
+- loops like `for, while` abbreviated as `loop_`
+- strings abbreviated as `str_`
+- miscellaneous abbreviated as `scrp_`
+   
 
 **Note:** The prefix name must not exceed more than 4 characters excluding the hyphen sign.
 
