@@ -12,14 +12,23 @@ It will then pass this data as argument into another function.
 The other function will pull the data out of the arguments
 and use them for further analysis.
 
+GOOD PRACTICES
+1. A function should do only 1 thing/task
+2. Do not use global variables when writing functions
+3. A function size should be small
+4. Try strive to minimize external dependencies in functions
+and other program components.
+The more self-contained a function is, the easier it will
+be to understand, reuse, and modify.
 
 """
 
 # declare a global list to hold the multiple variable passed by the function
-student_info_list = []
+
 
 
 def get_student_details():
+    student_info_list = [] # define a list
     stud_num = input("Enter the student number: ")
     stud_tutorial_mark = float(input("Enter student's tutorial mark:"))
     stud_test_mark = float(input("Enter student's test mark:"))
@@ -51,6 +60,7 @@ def calculate_grade(student_info_list):
         grade = "D"
     else:
         grade = "E"
+    # returning multiple variables
     return stud_num, final_mark, grade
 
 
