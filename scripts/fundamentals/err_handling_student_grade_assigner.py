@@ -10,6 +10,8 @@ grade2 = float(input("Type the grade of the second test: "))
 absences = int(input("Type the number of absences: "))
 total_classes = int(input("Type the total number of classes: "))
 
+# error handline
+# check if t
 avg_grade = (grade1+grade2)/2
 attendance = (total_classes-absences)/total_classes
 
